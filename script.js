@@ -1,12 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
   initLoader();
   initHeader();
+  initHeroParallax();
+  initBoatParallax();
   initMobileMenu();
   initScrollAnimations();
   initSmoothScroll();
-  initForm();
   initWhatsApp();
 });
+
+function initHeroParallax() {
+  const layer = document.getElementById('heroBg');
+  const hero = document.getElementById('hero');
+  if (!layer || !hero) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let ticking = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const max = 140;
+        const shift = Math.min(y * 0.32, max);
+        layer.style.transform = `translate3d(0, ${shift}px, 0)`;
+        ticking = false;
+      });
+    },
+    { passive: true }
+  );
+}
+
+function initBoatParallax() {
+  const layer = document.getElementById('boatBgParallax');
+  const section = document.getElementById('boat');
+  if (!layer || !section) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const update = () => {
+    const rect = section.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+    const scrolled = Math.max(0, -rect.top);
+    const shift = Math.min(scrolled * 0.12, 72);
+    layer.style.transform = `translate3d(0, ${shift}px, 0)`;
+  };
+
+  window.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  update();
+}
 
 function initLoader() {
   const loader = document.getElementById('loader');
@@ -90,34 +133,6 @@ function initSmoothScroll() {
         behavior: 'smooth'
       });
     });
-  });
-}
-
-function initForm() {
-  const form = document.getElementById('bookingForm');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
-    
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-    btn.style.opacity = '0.7';
-
-    setTimeout(() => {
-      btn.textContent = '✓ Sent! We\'ll contact you soon.';
-      btn.style.background = '#25D366';
-      btn.style.opacity = '1';
-      
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-        form.reset();
-      }, 3500);
-    }, 1500);
   });
 }
 

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Premium buggy, quad & SUP adventures in Omiš, Croatia. Expert-guided tours through Cetina canyon and Adriatic coastline."/>
-  <meta name="theme-color" content="#0A1628"/>
-  <title>Buggy Omiš — Adventure Awaits in Omiš, Croatia</title>
+  <meta name="description" content="Omiš Activities — buggy, quad, SUP, boat & kayak in Omiš, Croatia. Cetina canyon, river, and Adriatic adventures with local experts."/>
+  <meta name="theme-color" content="#050C18"/>
+  <title>Omiš Activities — Sea, River &amp; Adventure in Croatia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -16,7 +16,7 @@
   <div class="loader" id="loader">
     <div class="loader-inner">
       <span class="loader-brand">OMIŠ</span>
-      <span class="loader-sub">Adventures</span>
+      <span class="loader-sub">Activities</span>
       <div class="loader-bar"><div class="loader-fill"></div></div>
     </div>
   </div>
@@ -24,12 +24,13 @@
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header-inner">
-      <a href="#" class="logo">Buggy<span>Omiš</span></a>
+      <a href="#hero" class="logo">Omiš<span>Activities</span></a>
       <nav class="nav" id="nav">
-        <a href="#experiences">Experiences</a>
-        <a href="#tours">Tours</a>
-        <a href="#rentals">Rentals</a>
+        <a href="#omis">Omiš</a>
+        <a href="#tours">Buggy</a>
+        <a href="#rentals">Quad</a>
         <a href="#sup">SUP</a>
+        <a href="#boat">Boat</a>
         <a href="#book">Book</a>
       </nav>
       <a href="#book" class="btn-header">Book Now</a>
@@ -42,10 +43,11 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
     <nav>
-      <a href="#experiences">Experiences</a>
-      <a href="#tours">Tours</a>
-      <a href="#rentals">Rentals</a>
+      <a href="#omis">Omiš</a>
+      <a href="#tours">Buggy</a>
+      <a href="#rentals">Quad</a>
       <a href="#sup">SUP</a>
+      <a href="#boat">Boat</a>
       <a href="#book" class="btn-primary">Book Now</a>
     </nav>
   </div>
@@ -56,14 +58,31 @@
     ════════════════════════════════════════════ -->
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <div class="hero-bg-img"></div>
+        <div class="hero-parallax-layer" id="heroBg">
+          <div class="hero-zoom-layer">
+            <video class="hero-video" autoplay muted loop playsinline poster="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cetina-Canyon_in_Omis%2C_Croatia.JPG/1920px-Cetina-Canyon_in_Omis%2C_Croatia.JPG" aria-hidden="true">
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-beach-with-turquoise-water-1086-large.mp4" type="video/mp4"/>
+            </video>
+            <div class="hero-bg-img hero-bg-fallback" aria-hidden="true"></div>
+          </div>
+        </div>
         <div class="hero-overlay"></div>
+        <div class="hero-vignette" aria-hidden="true"></div>
       </div>
       <div class="hero-center">
-        <p class="hero-location anim-fade">Omiš, Croatia</p>
-        <h1 class="hero-headline anim-fade ad1">Feel the<br/><em>Adventure</em></h1>
-        <p class="hero-sub anim-fade ad2">Buggy · Quad · SUP</p>
-        <a href="#experiences" class="hero-btn anim-fade ad3">Discover More</a>
+        <p class="hero-location anim-fade">Omiš · Dalmatia · Croatia</p>
+        <h1 class="hero-headline anim-fade ad1">
+          <span class="hero-line1">Omiš Activities</span>
+          <span class="hero-line2">Sea. River. <span class="hero-accent">Adventure.</span></span>
+        </h1>
+        <nav class="hero-activity-strip anim-fade ad2" aria-label="Browse activities">
+          <a href="#tours">Buggy</a><span class="hero-strip-dot" aria-hidden="true">·</span>
+          <a href="#rentals">Quad</a><span class="hero-strip-dot" aria-hidden="true">·</span>
+          <a href="#sup">SUP</a><span class="hero-strip-dot" aria-hidden="true">·</span>
+          <a href="#boat">Boat</a><span class="hero-strip-dot" aria-hidden="true">·</span>
+          <a href="#book">Kayak</a>
+        </nav>
+        <a href="#tours" class="hero-cta anim-fade ad3">Choose Experience</a>
       </div>
       <div class="hero-scroll">
         <span class="scroll-line"></span>
@@ -78,95 +97,32 @@
       <div class="container">
         <div class="omis-layout">
           <div class="omis-text">
-            <span class="tag anim">The Destination</span>
-            <h2 class="title-lg anim ad1">Explore Omiš<br/>Like Never Before</h2>
-            <p class="text-body anim ad2">Small-group tours through rugged mountains, lush forests, and stunning viewpoints. Our local guides know every trail, every vista, every hidden spot.</p>
+            <span class="tag anim">The destination</span>
+            <h2 class="title-lg anim ad1">Omiš — land, river &amp; sea</h2>
+            <p class="text-body anim ad2">Where the Cetina cuts through the mountains before meeting the Adriatic, you can run buggy and quad trails in the hills, then switch to SUP, kayak, or a boat on the water — all from one town. Local crews know the routes, the wind, and the quiet spots worth stopping for.</p>
             <div class="features-row anim ad3">
               <div class="feature-chip">
-                <span class="fc-icon">🏔️</span>
-                <div><strong>Canyon Cliffs</strong><span>Dramatic Cetina gorge</span></div>
+                <span class="fc-icon">🏎️</span>
+                <div><strong>Buggy &amp; quad</strong><span>Off-road above the canyon</span></div>
               </div>
               <div class="feature-chip">
-                <span class="fc-icon">🌊</span>
-                <div><strong>Cetina River</strong><span>Crystal clear waters</span></div>
+                <span class="fc-icon">🏄</span>
+                <div><strong>SUP &amp; kayak</strong><span>River mouth &amp; coastline</span></div>
               </div>
               <div class="feature-chip">
-                <span class="fc-icon">☀️</span>
-                <div><strong>Adriatic Sea</strong><span>Mediterranean coast</span></div>
+                <span class="fc-icon">⛵</span>
+                <div><strong>Boat</strong><span>Glass boat, taxi &amp; rentals</span></div>
               </div>
             </div>
           </div>
           <div class="omis-images anim ad2">
             <div class="omis-img-main">
-              <img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&fit=crop&w=600&q=80" alt="Mediterranean cliffs meeting turquoise sea"/>
+              <img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&fit=crop&w=600&q=80" alt="Adriatic coastline near Omiš, sea and cliffs"/>
             </div>
             <div class="omis-img-accent">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Lush mountain valley with river"/>
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Mountains and valley — setting for buggy and quad trails"/>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════
-         EXPERIENCES — 3 PREMIUM CARDS
-    ════════════════════════════════════════════ -->
-    <section class="section section-exp" id="experiences">
-      <div class="container">
-        <div class="section-header center">
-          <span class="tag light anim">Our Adventures</span>
-          <h2 class="title-lg light anim ad1">Choose Your Thrill</h2>
-          <p class="text-sub light anim ad2">Three unique ways to discover the untouched beauty of Omiš.</p>
-        </div>
-        <div class="exp-grid">
-          <article class="exp-card anim">
-            <div class="exp-visual">
-              <img src="https://images.unsplash.com/photo-1533591380348-14193f1de18f?auto=format&fit=crop&w=600&q=80" alt="Off-road buggy on mountain trail"/>
-              <div class="exp-overlay"></div>
-              <span class="exp-badge">From €110</span>
-            </div>
-            <div class="exp-info">
-              <h3>Guided Buggy Trips</h3>
-              <p>Expert-led excursions through spectacular mountain peaks with panoramic canyon views.</p>
-              <div class="exp-meta">
-                <span>⏱ 2–3 hours</span>
-                <span>👥 2 per buggy</span>
-              </div>
-              <a href="#tours" class="btn-text">View Tours →</a>
-            </div>
-          </article>
-          <article class="exp-card anim ad1">
-            <div class="exp-visual">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Quad ATV on rugged terrain"/>
-              <div class="exp-overlay"></div>
-              <span class="exp-badge">From €100</span>
-            </div>
-            <div class="exp-info">
-              <h3>Buggy & Quad Rentals</h3>
-              <p>Self-drive freedom. No guide needed — explore at your own pace, your own way.</p>
-              <div class="exp-meta">
-                <span>⏱ 3–8 hours</span>
-                <span>🗺️ Free roam</span>
-              </div>
-              <a href="#tours" class="btn-text">View Options →</a>
-            </div>
-          </article>
-          <article class="exp-card anim ad2">
-            <div class="exp-visual">
-              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Crystal clear water for paddleboarding"/>
-              <div class="exp-overlay"></div>
-              <span class="exp-badge">From €20</span>
-            </div>
-            <div class="exp-info">
-              <h3>SUP Experience</h3>
-              <p>Paddle the Adriatic coastline. Discover hidden beaches and coves at your own rhythm.</p>
-              <div class="exp-meta">
-                <span>⏱ 5–8 hours</span>
-                <span>🌊 Sea & coast</span>
-              </div>
-              <a href="#tours" class="btn-text">See Details →</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -379,12 +335,162 @@
     </section>
 
     <!-- ════════════════════════════════════════════
+         BOAT EXPERIENCES — CETINA (PREMIUM)
+    ════════════════════════════════════════════ -->
+    <section class="section-boat-exp" id="boat" aria-labelledby="boat-heading">
+      <div class="boat-exp-bg" aria-hidden="true">
+        <div class="boat-exp-parallax" id="boatBgParallax">
+          <div class="boat-exp-zoom">
+            <video class="boat-exp-video" autoplay muted loop playsinline poster="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cetina-Canyon_in_Omis%2C_Croatia.JPG/1920px-Cetina-Canyon_in_Omis%2C_Croatia.JPG">
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-3299-large.mp4" type="video/mp4"/>
+            </video>
+            <div class="boat-exp-fallback"></div>
+          </div>
+        </div>
+        <div class="boat-exp-gradient"></div>
+        <div class="boat-exp-vignette"></div>
+        <div class="boat-river-glow"></div>
+      </div>
+
+      <div class="boat-exp-content">
+        <div class="container">
+          <header class="section-header center boat-exp-header">
+            <span class="tag boat-exp-tag anim">River &amp; canyon</span>
+            <h2 class="title-lg light anim ad1" id="boat-heading">Boat Experiences on Cetina</h2>
+            <p class="text-sub light boat-exp-sub anim ad2">Explore the river, hidden beaches and untouched nature of Omiš.</p>
+          </header>
+
+          <div class="boat-wave-divider anim boat-wave-divider--subtle" aria-hidden="true">
+            <svg viewBox="0 0 1440 48" preserveAspectRatio="none" class="boat-wave-svg"><path fill="rgba(255,255,255,0.07)" d="M0,24 C180,0 360,48 540,24 S900,0 1080,24 1260,48 1440,24 L1440,48 L0,48 Z"/></svg>
+          </div>
+
+          <div class="boat-cards-grid">
+            <article class="boat-premium-card anim">
+              <div class="boat-pc-media">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85" alt="Crystal clear river water in a canyon" loading="lazy" width="900" height="560"/>
+                <div class="boat-pc-media-shine"></div>
+                <span class="boat-pc-corner-badge">From €20</span>
+              </div>
+              <div class="boat-pc-panel">
+                <div class="boat-pc-head">
+                  <span class="boat-pc-icon-wrap" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 15c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M6 15h12"/><path d="M8 15l-1-4h10l-1 4"/><ellipse cx="12" cy="17.5" rx="6" ry="2"/></svg>
+                  </span>
+                  <h3 class="boat-pc-title">Glass Boat</h3>
+                </div>
+                <p class="boat-pc-lead">Scenic ride through the Cetina canyon with a glass-bottom view — fish and the riverbed below, guide on board.</p>
+                <ul class="boat-pc-facts">
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Ideal for families &amp; children · pets allowed</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30–35 min cruise · 1h break at Radmanove Mlinice</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Nature-focused, relaxed pace</li>
+                </ul>
+                <div class="boat-pc-meta">
+                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> ≈30–35 min + 1h stop</span>
+                </div>
+                <div class="boat-pc-badges">
+                  <span>Family friendly</span>
+                  <span>Pets welcome</span>
+                  <span>Nature tour</span>
+                </div>
+                <div class="boat-pc-pricing">
+                  <div class="boat-pr-row"><span>Adult</span><strong>€20</strong></div>
+                  <div class="boat-pr-row"><span>Child 5–13</span><strong>€10</strong></div>
+                  <div class="boat-pr-row"><span>Under 5</span><strong>Free</strong></div>
+                </div>
+                <a href="#book" class="btn-boat-reserve">Reserve now</a>
+              </div>
+            </article>
+
+            <article class="boat-premium-card anim ad1">
+              <div class="boat-pc-media">
+                <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=900&q=85" alt="Speedboat on open water" loading="lazy" width="900" height="560"/>
+                <div class="boat-pc-media-shine"></div>
+                <span class="boat-pc-corner-badge">From €70</span>
+              </div>
+              <div class="boat-pc-panel">
+                <div class="boat-pc-head">
+                  <span class="boat-pc-icon-wrap" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18l4-8 4 4 4-6 4 10"/><path d="M2 18h20"/></svg>
+                  </span>
+                  <h3 class="boat-pc-title">Rent a Boat</h3>
+                </div>
+                <p class="boat-pc-lead">Your schedule, your rhythm — self-drive boat, no captain required. Choose river or sea and make it private.</p>
+                <ul class="boat-pc-facts">
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ~7 km upstream · stop at Radmanove Mlinice</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Access hidden beaches &amp; quiet coves</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Full freedom experience on the water</li>
+                </ul>
+                <div class="boat-pc-meta">
+                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 3h or full day</span>
+                </div>
+                <div class="boat-pc-badges">
+                  <span>Private</span>
+                  <span>Self drive</span>
+                  <span>Sea &amp; river</span>
+                </div>
+                <div class="boat-pc-pricing">
+                  <div class="boat-pr-row"><span>3 hours</span><strong>€70</strong></div>
+                  <div class="boat-pr-row"><span>Full day</span><strong>€130</strong></div>
+                </div>
+                <a href="#book" class="btn-boat-reserve">Reserve now</a>
+              </div>
+            </article>
+
+            <article class="boat-premium-card anim ad2">
+              <div class="boat-pc-media">
+                <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Luxury boat on calm water" loading="lazy" width="900" height="560"/>
+                <div class="boat-pc-media-shine"></div>
+                <span class="boat-pc-corner-badge">From €15</span>
+              </div>
+              <div class="boat-pc-panel">
+                <div class="boat-pc-head">
+                  <span class="boat-pc-icon-wrap" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17h18l-2-8H5l-2 8zM6 9V6a3 3 0 016 0v3"/></svg>
+                  </span>
+                  <h3 class="boat-pc-title">Taxi Boat</h3>
+                </div>
+                <p class="boat-pc-lead">Private transfer-style boat through the Cetina canyon — guided, with time to enjoy Radmanove Mlinice.</p>
+                <ul class="boat-pc-facts">
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30 min ride · 90 min break · guide included</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Panoramic canyon route · pet friendly</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suitable for all ages</li>
+                </ul>
+                <div class="boat-pc-meta">
+                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 30 min + 90 min stop</span>
+                </div>
+                <div class="boat-pc-badges">
+                  <span>Private transfer</span>
+                  <span>Guided</span>
+                  <span>Pet friendly</span>
+                </div>
+                <div class="boat-pc-pricing">
+                  <div class="boat-pr-row"><span>Adults</span><strong>€15</strong></div>
+                  <div class="boat-pr-row"><span>Kids 5–13</span><strong>€10</strong></div>
+                  <div class="boat-pr-row"><span>Under 5</span><strong>Free</strong></div>
+                </div>
+                <a href="#book" class="btn-boat-reserve">Reserve now</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="boat-exp-bottom-cta anim ad1">
+            <div class="boat-bottom-glass">
+              <h3 class="boat-bottom-title">Ready for your river adventure?</h3>
+              <p class="boat-bottom-sub">We'll match you with the right boat, time slot, and meeting point.</p>
+              <a href="#book" class="btn-boat-bottom">Book your boat experience</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
          TRUST — WHY US
     ════════════════════════════════════════════ -->
     <section class="section">
       <div class="container">
         <div class="section-header center">
-          <span class="tag anim">Why Buggy Omiš</span>
+          <span class="tag anim">Why Omiš Activities</span>
           <h2 class="title-lg anim ad1">Professional. Safe. Unforgettable.</h2>
         </div>
         <div class="trust-grid">
@@ -400,21 +506,50 @@
     <!-- ════════════════════════════════════════════
          GALLERY — VISUAL SHOWCASE
     ════════════════════════════════════════════ -->
-    <section class="section section-gallery" id="gallery">
+    <section class="section section-gallery" id="gallery" aria-labelledby="gallery-heading">
       <div class="container">
-        <div class="section-header center">
-          <span class="tag light anim">Gallery</span>
-          <h2 class="title-lg light anim ad1">Omiš in Action</h2>
-        </div>
-      </div>
-      <div class="gallery-wrap anim ad2">
-        <div class="gallery-track">
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=80" alt="Golden landscape"/></div>
-          <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=500&q=80" alt="Mountain valley"/></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Beach coast"/></div>
-          <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" alt="Clear water"/></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&fit=crop&w=500&q=80" alt="Mediterranean cliffs"/></div>
-          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=500&q=80" alt="Sunset coast"/></div>
+        <header class="section-header center gallery-header">
+          <span class="tag gallery-tag anim">Gallery</span>
+          <h2 id="gallery-heading" class="title-lg light anim ad1">Omiš in Action</h2>
+          <p class="gallery-lead light anim ad1">River, sea, and trails — a curated glimpse of what a day here feels like.</p>
+        </header>
+        <div class="gallery-bento anim ad2" role="list">
+          <figure class="gallery-cell gallery-cell--feature" role="listitem">
+            <div class="gallery-cell-media">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Turquoise Adriatic water from above, ideal for SUP and boat" loading="lazy" decoding="async" sizes="(max-width: 1023px) 100vw, 50vw"/>
+            </div>
+            <figcaption class="gallery-caption">Sea &amp; SUP</figcaption>
+          </figure>
+          <figure class="gallery-cell" role="listitem">
+            <div class="gallery-cell-media">
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Off-road vehicle on a dusty mountain trail" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+            </div>
+            <figcaption class="gallery-caption">Buggy trails</figcaption>
+          </figure>
+          <figure class="gallery-cell" role="listitem">
+            <div class="gallery-cell-media">
+              <img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Steep rocky coastline and Mediterranean light" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+            </div>
+            <figcaption class="gallery-caption">Cliffs &amp; stone</figcaption>
+          </figure>
+          <figure class="gallery-cell" role="listitem">
+            <div class="gallery-cell-media">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Calm sandy beach and clear shallow sea" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+            </div>
+            <figcaption class="gallery-caption">Hidden beaches</figcaption>
+          </figure>
+          <figure class="gallery-cell" role="listitem">
+            <div class="gallery-cell-media">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Layers of mountains and green valley haze" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+            </div>
+            <figcaption class="gallery-caption">Canyon views</figcaption>
+          </figure>
+          <figure class="gallery-cell gallery-cell--wide" role="listitem">
+            <div class="gallery-cell-media">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Wide alpine landscape at golden hour" loading="lazy" decoding="async" sizes="(max-width: 1023px) 100vw, 50vw"/>
+            </div>
+            <figcaption class="gallery-caption">Golden hour drives</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -441,11 +576,11 @@
     ════════════════════════════════════════════ -->
     <section class="section" id="book">
       <div class="container">
-        <div class="book-layout">
+        <div class="book-layout book-layout--solo">
           <div class="book-left">
             <span class="tag anim">Get in Touch</span>
             <h2 class="title-lg anim ad1">Book Your<br/>Adventure</h2>
-            <p class="text-body anim ad2">Fill out the form and we'll confirm your reservation quickly via WhatsApp or email.</p>
+            <p class="text-body anim ad2">Reach out by phone or WhatsApp — we'll confirm availability and details for buggy, quad, SUP, boat &amp; kayak.</p>
             <div class="contact-cards anim ad3">
               <a href="tel:+385000000000" class="cc-item">
                 <span class="cc-icon">📞</span>
@@ -461,48 +596,6 @@
               </div>
             </div>
           </div>
-          <form class="book-form anim" id="bookingForm">
-            <div class="bf-row">
-              <label class="bf-field full"><span>Full Name *</span><input type="text" name="name" required placeholder="Your name"/></label>
-            </div>
-            <div class="bf-row">
-              <label class="bf-field"><span>Email *</span><input type="email" name="email" required placeholder="email@example.com"/></label>
-              <label class="bf-field"><span>Phone *</span><input type="tel" name="phone" required placeholder="+385..."/></label>
-            </div>
-            <div class="bf-row">
-              <label class="bf-field full"><span>Tour Type *</span>
-                <select name="tour" required>
-                  <option value="">Select your experience...</option>
-                  <optgroup label="🏎️ Guided Buggy Tours">
-                    <option>2-Hour Buggy Tour (€110)</option>
-                    <option>Sunset Buggy Tour (€120)</option>
-                    <option>3-Hour Buggy Tour (€130)</option>
-                  </optgroup>
-                  <optgroup label="🏍️ Self-Drive Rentals">
-                    <option>Buggy 3h (€100)</option>
-                    <option>Buggy 5h (€130)</option>
-                    <option>Buggy 8h (€160)</option>
-                    <option>Quad 3h (€100)</option>
-                    <option>Quad 5h (€130)</option>
-                    <option>Quad 8h (€160)</option>
-                  </optgroup>
-                  <optgroup label="🏄 SUP Board">
-                    <option>SUP 5h (€20)</option>
-                    <option>SUP 8h (€30)</option>
-                  </optgroup>
-                </select>
-              </label>
-            </div>
-            <div class="bf-row">
-              <label class="bf-field"><span>Date *</span><input type="date" name="date" required/></label>
-              <label class="bf-field"><span>People *</span><input type="number" name="people" min="1" max="20" required placeholder="2"/></label>
-            </div>
-            <div class="bf-row">
-              <label class="bf-field full"><span>Message (optional)</span><textarea name="msg" rows="3" placeholder="Special requests or questions..."></textarea></label>
-            </div>
-            <button type="submit" class="btn-primary full">Send Reservation Request</button>
-            <p class="bf-note">* 1 buggy = 2 persons (driver + passenger)</p>
-          </form>
         </div>
       </div>
     </section>
@@ -513,14 +606,15 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="logo">Buggy<span>Omiš</span></a>
-          <p>Premium adventure experiences in Omiš, Dalmatia, Croatia.</p>
+          <a href="#hero" class="logo">Omiš<span>Activities</span></a>
+          <p>Land &amp; sea adventures in Omiš — buggy, quad, SUP, boat &amp; kayak on the Cetina &amp; Adriatic.</p>
         </div>
         <div class="footer-col">
-          <h6>Experiences</h6>
-          <a href="#tours">Guided Buggy Tours</a>
-          <a href="#rentals">Self-Drive Rentals</a>
-          <a href="#sup">SUP Board</a>
+          <h6>Activities</h6>
+          <a href="#tours">Guided buggy</a>
+          <a href="#rentals">Quad &amp; buggy rental</a>
+          <a href="#sup">SUP</a>
+          <a href="#boat">Boat</a>
         </div>
         <div class="footer-col">
           <h6>Explore</h6>
@@ -536,7 +630,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Buggy Omiš — All rights reserved.</p>
+        <p>© 2026 Omiš Activities — All rights reserved.</p>
       </div>
     </div>
   </footer>
