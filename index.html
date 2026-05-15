@@ -60,8 +60,8 @@
       <div class="hero-bg">
         <div class="hero-parallax-layer" id="heroBg">
           <div class="hero-zoom-layer">
-            <video class="hero-video" autoplay muted loop playsinline poster="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cetina-Canyon_in_Omis%2C_Croatia.JPG/1920px-Cetina-Canyon_in_Omis%2C_Croatia.JPG" aria-hidden="true">
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-beach-with-turquoise-water-1086-large.mp4" type="video/mp4"/>
+            <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80" aria-hidden="true">
+              <source src="https://videos.pexels.com/video-files/3121327/3121327-hd_1920_1080_24fps.mp4" type="video/mp4"/>
             </video>
             <div class="hero-bg-img hero-bg-fallback" aria-hidden="true"></div>
           </div>
@@ -82,9 +82,10 @@
           <a href="#boat">Boat</a><span class="hero-strip-dot" aria-hidden="true">·</span>
           <a href="#book">Kayak</a>
         </nav>
-        <a href="#tours" class="hero-cta anim-fade ad3">Choose Experience</a>
+        <a href="#tours" class="hero-cta anim-fade ad3">Choose Experience <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
       </div>
       <div class="hero-scroll">
+        <div class="scroll-mouse"></div>
         <span class="scroll-line"></span>
         <span class="scroll-text">Scroll</span>
       </div>
@@ -95,34 +96,72 @@
     ════════════════════════════════════════════ -->
     <section class="section section-omis" id="omis">
       <div class="container">
-        <div class="omis-layout">
-          <div class="omis-text">
-            <span class="tag anim">The destination</span>
-            <h2 class="title-lg anim ad1">Omiš — land, river &amp; sea</h2>
-            <p class="text-body anim ad2">Where the Cetina cuts through the mountains before meeting the Adriatic, you can run buggy and quad trails in the hills, then switch to SUP, kayak, or a boat on the water — all from one town. Local crews know the routes, the wind, and the quiet spots worth stopping for.</p>
-            <div class="features-row anim ad3">
-              <div class="feature-chip">
-                <span class="fc-icon">🏎️</span>
-                <div><strong>Buggy &amp; quad</strong><span>Off-road above the canyon</span></div>
-              </div>
-              <div class="feature-chip">
-                <span class="fc-icon">🏄</span>
-                <div><strong>SUP &amp; kayak</strong><span>River mouth &amp; coastline</span></div>
-              </div>
-              <div class="feature-chip">
-                <span class="fc-icon">⛵</span>
-                <div><strong>Boat</strong><span>Glass boat, taxi &amp; rentals</span></div>
-              </div>
+        <div class="omis-intro anim">
+          <span class="tag teal">Omiš Activities</span>
+          <h2 class="title-lg anim ad1">One Town. Five Adventures.</h2>
+          <p class="omis-lead anim ad2">Where the Cetina canyon meets the Adriatic — buggy and quad trails above, SUP, kayak, and boat on the water below. All run by locals who know every route.</p>
+        </div>
+        <div class="omis-activities-grid anim ad2">
+          <a href="#tours" class="omis-act-card">
+            <div class="omis-act-img">
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=75" alt="Off-road buggy on mountain trail" loading="lazy"/>
             </div>
-          </div>
-          <div class="omis-images anim ad2">
-            <div class="omis-img-main">
-              <img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&fit=crop&w=600&q=80" alt="Adriatic coastline near Omiš, sea and cliffs"/>
+            <div class="omis-act-body">
+              <div class="omis-act-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-4l2-5h10l2 5h2v4h-2"/><path d="M5 12h14"/></svg>
+              </div>
+              <h4>Buggy Tours</h4>
+              <span>Guided off-road above the canyon</span>
             </div>
-            <div class="omis-img-accent">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Mountains and valley — setting for buggy and quad trails"/>
+          </a>
+          <a href="#rentals" class="omis-act-card">
+            <div class="omis-act-img">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=75" alt="Mountain landscape for quad exploration" loading="lazy"/>
             </div>
-          </div>
+            <div class="omis-act-body">
+              <div class="omis-act-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="5" cy="17" r="2"/><circle cx="19" cy="17" r="2"/><path d="M7 17h10"/><path d="M5 15V9l4-3h2l3 3h3l2 3v3"/><path d="M9 6v6"/></svg>
+              </div>
+              <h4>Quad &amp; Buggy Rental</h4>
+              <span>Self-drive, your schedule</span>
+            </div>
+          </a>
+          <a href="#sup" class="omis-act-card">
+            <div class="omis-act-img">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=75" alt="Clear water and beach for SUP" loading="lazy"/>
+            </div>
+            <div class="omis-act-body">
+              <div class="omis-act-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M12 4v12"/><path d="M8 8l4-4 4 4"/></svg>
+              </div>
+              <h4>SUP</h4>
+              <span>Paddle along cliffs &amp; coves</span>
+            </div>
+          </a>
+          <a href="#boat" class="omis-act-card">
+            <div class="omis-act-img">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=75" alt="Boat experience on Cetina river" loading="lazy"/>
+            </div>
+            <div class="omis-act-body">
+              <div class="omis-act-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 15c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M6 15h12"/><ellipse cx="12" cy="17.5" rx="6" ry="2"/></svg>
+              </div>
+              <h4>Boat</h4>
+              <span>Glass boat, taxi &amp; river rentals</span>
+            </div>
+          </a>
+          <a href="#book" class="omis-act-card omis-act-card--accent">
+            <div class="omis-act-img">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=75" alt="Kayak on calm Adriatic waters" loading="lazy"/>
+            </div>
+            <div class="omis-act-body">
+              <div class="omis-act-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M4 16l4-8h8l4 8"/><circle cx="12" cy="12" r="1"/></svg>
+              </div>
+              <h4>Kayak</h4>
+              <span>River mouth &amp; coastline</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -131,64 +170,109 @@
          TOURS — GUIDED BUGGY (EARTH THEME)
     ════════════════════════════════════════════ -->
     <section class="section section-tours" id="tours">
-      <div class="container">
-        <div class="section-header center">
-          <span class="tag earth anim">🏎️ Guided Buggy Tours</span>
-          <h2 class="title-lg anim ad1">Choose Your Adventure</h2>
-          <p class="text-sub anim ad2">Professional guide leads you through stunning mountain trails.<br/>2 persons per buggy (driver + passenger). Fuel always included.</p>
+      <!-- Visual Banner -->
+      <div class="tours-banner">
+        <div class="tours-banner-media">
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=80" alt="Off-road buggy on mountain trail" loading="lazy"/>
         </div>
+        <div class="tours-banner-overlay"></div>
+        <div class="tours-banner-content">
+          <span class="tours-banner-tag anim">Guided Buggy Tours</span>
+          <h2 class="tours-banner-title anim ad1">Choose Your<br/>Adventure</h2>
+          <p class="tours-banner-sub anim ad2">Professional guide leads you through stunning mountain trails above the Cetina canyon.</p>
+        </div>
+      </div>
+
+      <!-- Highlights Strip -->
+      <div class="tours-highlights anim">
+        <div class="container">
+          <div class="tours-highlights-row">
+            <div class="tours-hl">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0112 0v1"/><path d="M16 11l2 2 4-4"/></svg>
+              <div><strong>Professional guide</strong><span>Expert local crew</span></div>
+            </div>
+            <div class="tours-hl">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 22V6l9-4 9 4v16"/><circle cx="12" cy="13" r="3"/><path d="M12 10v6"/></svg>
+              <div><strong>Fuel included</strong><span>No hidden costs</span></div>
+            </div>
+            <div class="tours-hl">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="9" r="4"/><circle cx="15" cy="9" r="4"/><path d="M5 20a7 7 0 0114 0"/></svg>
+              <div><strong>2 persons / buggy</strong><span>Driver + passenger</span></div>
+            </div>
+            <div class="tours-hl">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><strong>Omiš mountains</strong><span>Canyon viewpoints</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour Cards -->
+      <div class="container">
         <div class="tours-grid">
           <div class="tour-card anim">
-            <div class="tc-icon">🏔️</div>
-            <div class="tc-duration-badge">2 hours</div>
-            <h4>Mountain Explorer</h4>
-            <p class="tc-desc">Perfect introduction to off-road adventure. Scenic canyon views and forest trails.</p>
-            <ul class="tc-features">
-              <li><span class="check">✓</span> Fuel included</li>
-              <li><span class="check">✓</span> Professional guide</li>
-              <li><span class="check">✓</span> Safety briefing</li>
-              <li><span class="check">✓</span> 2 persons / buggy</li>
-            </ul>
-            <div class="tc-footer">
-              <div class="tc-price"><span>€110</span><small>per vehicle</small></div>
-              <a href="#book" class="btn-book">Book Now</a>
+            <div class="tc-header-img">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=75" alt="Mountain trail scenery" loading="lazy"/>
+              <div class="tc-duration-badge">2 hours</div>
+            </div>
+            <div class="tc-body">
+              <h4>Mountain Explorer</h4>
+              <p class="tc-desc">Perfect introduction to off-road adventure. Scenic canyon views and forest trails.</p>
+              <ul class="tc-features">
+                <li><span class="check">✓</span> Fuel included</li>
+                <li><span class="check">✓</span> Professional guide</li>
+                <li><span class="check">✓</span> Safety briefing</li>
+                <li><span class="check">✓</span> 2 persons / buggy</li>
+              </ul>
+              <div class="tc-footer">
+                <div class="tc-price"><span>€110</span><small>per vehicle</small></div>
+                <a href="#book" class="btn-book">Book Now</a>
+              </div>
             </div>
           </div>
 
           <div class="tour-card featured anim ad1">
             <div class="tc-popular">★ Most Popular</div>
-            <div class="tc-icon">🌅</div>
-            <div class="tc-duration-badge sunset">Sunset</div>
-            <h4>Golden Hour Adventure</h4>
-            <p class="tc-desc">Magical sunset experience. Watch the sky turn gold over Cetina canyon from the best viewpoints.</p>
-            <ul class="tc-features">
-              <li><span class="check">✓</span> Fuel included</li>
-              <li><span class="check">✓</span> Professional guide</li>
-              <li><span class="check">✓</span> Premium viewpoints</li>
-              <li><span class="check">✓</span> Photo opportunities</li>
-              <li><span class="check">✓</span> 2 persons / buggy</li>
-            </ul>
-            <div class="tc-footer">
-              <div class="tc-price"><span>€120</span><small>per vehicle</small></div>
-              <a href="#book" class="btn-book">Book Now</a>
+            <div class="tc-header-img">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=75" alt="Golden hour mountain landscape" loading="lazy"/>
+              <div class="tc-duration-badge sunset">Sunset</div>
+            </div>
+            <div class="tc-body">
+              <h4>Golden Hour Adventure</h4>
+              <p class="tc-desc">Magical sunset experience. Watch the sky turn gold over Cetina canyon from the best viewpoints.</p>
+              <ul class="tc-features">
+                <li><span class="check">✓</span> Fuel included</li>
+                <li><span class="check">✓</span> Professional guide</li>
+                <li><span class="check">✓</span> Premium viewpoints</li>
+                <li><span class="check">✓</span> Photo opportunities</li>
+                <li><span class="check">✓</span> 2 persons / buggy</li>
+              </ul>
+              <div class="tc-footer">
+                <div class="tc-price"><span>€120</span><small>per vehicle</small></div>
+                <a href="#book" class="btn-book">Book Now</a>
+              </div>
             </div>
           </div>
 
           <div class="tour-card anim ad2">
-            <div class="tc-icon">🗻</div>
-            <div class="tc-duration-badge">3 hours</div>
-            <h4>Ultimate Trail</h4>
-            <p class="tc-desc">Extended journey deep into the mountains. More trails, more views, more adrenaline.</p>
-            <ul class="tc-features">
-              <li><span class="check">✓</span> Fuel included</li>
-              <li><span class="check">✓</span> Professional guide</li>
-              <li><span class="check">✓</span> Extended route</li>
-              <li><span class="check">✓</span> Multiple stops</li>
-              <li><span class="check">✓</span> 2 persons / buggy</li>
-            </ul>
-            <div class="tc-footer">
-              <div class="tc-price"><span>€130</span><small>per vehicle</small></div>
-              <a href="#book" class="btn-book">Book Now</a>
+            <div class="tc-header-img">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=75" alt="Mountain peaks adventure" loading="lazy"/>
+              <div class="tc-duration-badge">3 hours</div>
+            </div>
+            <div class="tc-body">
+              <h4>Ultimate Trail</h4>
+              <p class="tc-desc">Extended journey deep into the mountains. More trails, more views, more adrenaline.</p>
+              <ul class="tc-features">
+                <li><span class="check">✓</span> Fuel included</li>
+                <li><span class="check">✓</span> Professional guide</li>
+                <li><span class="check">✓</span> Extended route</li>
+                <li><span class="check">✓</span> Multiple stops</li>
+                <li><span class="check">✓</span> 2 persons / buggy</li>
+              </ul>
+              <div class="tc-footer">
+                <div class="tc-price"><span>€130</span><small>per vehicle</small></div>
+                <a href="#book" class="btn-book">Book Now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -199,49 +283,74 @@
          RENTALS — SELF DRIVE (RUGGED THEME)
     ════════════════════════════════════════════ -->
     <section class="section section-rentals" id="rentals">
-      <div class="container">
-        <div class="section-header center">
-          <span class="tag rust anim">🏍️ Self-Drive Rentals</span>
-          <h2 class="title-lg anim ad1">Freedom to Explore</h2>
-          <p class="text-sub anim ad2">No guide. No schedule. No limits. Just you, the vehicle, and endless mountain trails.<br/>Fuel not included — fill up and go wherever adventure takes you.</p>
+      <!-- Visual Banner -->
+      <div class="rentals-banner">
+        <div class="rentals-banner-media">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=80" alt="Mountain landscape — freedom to explore" loading="lazy"/>
         </div>
+        <div class="rentals-banner-overlay"></div>
+        <div class="rentals-banner-content">
+          <span class="rentals-banner-tag anim">Self-Drive Rentals</span>
+          <h2 class="rentals-banner-title anim ad1">Freedom to<br/>Explore</h2>
+          <p class="rentals-banner-sub anim ad2">No guide. No schedule. No limits. Just you, the vehicle, and endless mountain trails.</p>
+        </div>
+      </div>
 
+      <!-- Differentiators Strip -->
+      <div class="rentals-diff anim">
+        <div class="container">
+          <div class="rentals-diff-row">
+            <div class="rentals-df">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+              <div><strong>Your schedule</strong><span>Go when you want</span></div>
+            </div>
+            <div class="rentals-df">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              <div><strong>Choose your route</strong><span>Total freedom</span></div>
+            </div>
+            <div class="rentals-df">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4m10-10h-4M6 12H2m15.07-5.07l-2.83 2.83M9.76 14.24l-2.83 2.83m11.14 0l-2.83-2.83M9.76 9.76L6.93 6.93"/></svg>
+              <div><strong>Fuel not included</strong><span>Fill up & go</span></div>
+            </div>
+            <div class="rentals-df">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/></svg>
+              <div><strong>Safety briefing</strong><span>Before every ride</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rental Columns -->
+      <div class="container">
         <div class="rentals-grid">
           <!-- BUGGY COLUMN -->
           <div class="rental-column anim">
             <div class="rc-header buggy">
-              <span class="rc-icon">🏎️</span>
+              <div class="rc-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-4l2-5h10l2 5h2v4h-2"/><path d="M5 12h14"/></svg>
+              </div>
               <div>
                 <h5>Buggy Rentals</h5>
-                <p>4-wheel off-road vehicle, seats 2</p>
+                <p>4-wheel off-road vehicle · seats 2</p>
               </div>
             </div>
             <div class="rental-cards">
               <div class="rental-card">
-                <div class="rcard-time">3h</div>
-                <div class="rcard-body">
-                  <h6>Half-Day Escape</h6>
-                  <p>Quick mountain run. Explore nearby trails and viewpoints.</p>
-                </div>
+                <div class="rcard-time"><strong>3</strong><small>hours</small></div>
+                <h6 class="rcard-name">Half-Day Escape</h6>
                 <div class="rcard-price">€100</div>
                 <a href="#book" class="rcard-btn">Book</a>
               </div>
               <div class="rental-card">
-                <div class="rcard-time">5h</div>
-                <div class="rcard-body">
-                  <h6>Adventure Day</h6>
-                  <p>Extended exploration. Reach distant peaks and hidden valleys.</p>
-                </div>
+                <div class="rcard-time"><strong>5</strong><small>hours</small></div>
+                <h6 class="rcard-name">Adventure Day</h6>
                 <div class="rcard-price">€130</div>
                 <a href="#book" class="rcard-btn">Book</a>
               </div>
               <div class="rental-card popular">
                 <span class="rcard-tag">Best Value</span>
-                <div class="rcard-time">8h</div>
-                <div class="rcard-body">
-                  <h6>Full Freedom</h6>
-                  <p>Entire day of exploration. Go anywhere, see everything.</p>
-                </div>
+                <div class="rcard-time"><strong>8</strong><small>hours</small></div>
+                <h6 class="rcard-name">Full Day Freedom</h6>
                 <div class="rcard-price">€160</div>
                 <a href="#book" class="rcard-btn">Book</a>
               </div>
@@ -251,38 +360,31 @@
           <!-- QUAD COLUMN -->
           <div class="rental-column anim ad1">
             <div class="rc-header quad">
-              <span class="rc-icon">🏍️</span>
+              <div class="rc-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="5" cy="17" r="2"/><circle cx="19" cy="17" r="2"/><path d="M7 17h10"/><path d="M5 15V9l4-3h2l3 3h3l2 3v3"/><path d="M9 6v6"/></svg>
+              </div>
               <div>
                 <h5>Quad Rentals</h5>
-                <p>Single-rider ATV, maximum agility</p>
+                <p>Single-rider ATV · maximum agility</p>
               </div>
             </div>
             <div class="rental-cards">
               <div class="rental-card">
-                <div class="rcard-time">3h</div>
-                <div class="rcard-body">
-                  <h6>Quick Thrill</h6>
-                  <p>Fast-paced mountain adventure on rugged terrain.</p>
-                </div>
+                <div class="rcard-time"><strong>3</strong><small>hours</small></div>
+                <h6 class="rcard-name">Quick Thrill</h6>
                 <div class="rcard-price">€100</div>
                 <a href="#book" class="rcard-btn">Book</a>
               </div>
               <div class="rental-card">
-                <div class="rcard-time">5h</div>
-                <div class="rcard-body">
-                  <h6>Trail Blazer</h6>
-                  <p>More time, more trails. Conquer the backcountry.</p>
-                </div>
+                <div class="rcard-time"><strong>5</strong><small>hours</small></div>
+                <h6 class="rcard-name">Trail Blazer</h6>
                 <div class="rcard-price">€130</div>
                 <a href="#book" class="rcard-btn">Book</a>
               </div>
               <div class="rental-card popular">
                 <span class="rcard-tag">Best Value</span>
-                <div class="rcard-time">8h</div>
-                <div class="rcard-body">
-                  <h6>All-Day Ride</h6>
-                  <p>Sunrise to sunset. The ultimate quad experience.</p>
-                </div>
+                <div class="rcard-time"><strong>8</strong><small>hours</small></div>
+                <h6 class="rcard-name">All-Day Ride</h6>
                 <div class="rcard-price">€160</div>
                 <a href="#book" class="rcard-btn">Book</a>
               </div>
@@ -341,8 +443,8 @@
       <div class="boat-exp-bg" aria-hidden="true">
         <div class="boat-exp-parallax" id="boatBgParallax">
           <div class="boat-exp-zoom">
-            <video class="boat-exp-video" autoplay muted loop playsinline poster="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cetina-Canyon_in_Omis%2C_Croatia.JPG/1920px-Cetina-Canyon_in_Omis%2C_Croatia.JPG">
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-3299-large.mp4" type="video/mp4"/>
+            <video class="boat-exp-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=1920&q=80">
+              <source src="https://videos.pexels.com/video-files/6093378/6093378-hd_1920_1080_24fps.mp4" type="video/mp4"/>
             </video>
             <div class="boat-exp-fallback"></div>
           </div>
@@ -487,18 +589,48 @@
     <!-- ════════════════════════════════════════════
          TRUST — WHY US
     ════════════════════════════════════════════ -->
-    <section class="section">
+    <section class="section section-trust">
       <div class="container">
         <div class="section-header center">
           <span class="tag anim">Why Omiš Activities</span>
           <h2 class="title-lg anim ad1">Professional. Safe. Unforgettable.</h2>
         </div>
         <div class="trust-grid">
-          <div class="trust-item anim"><div class="ti-icon">👥</div><h5>Local Guides</h5><p>Expert locals who know every trail and viewpoint.</p></div>
-          <div class="trust-item anim ad1"><div class="ti-icon">🛡️</div><h5>Modern Fleet</h5><p>Regularly maintained vehicles for safety and performance.</p></div>
-          <div class="trust-item anim ad2"><div class="ti-icon">🌲</div><h5>Pristine Nature</h5><p>Untouched mountains, forests, and crystal rivers.</p></div>
-          <div class="trust-item anim ad3"><div class="ti-icon">📸</div><h5>Stunning Views</h5><p>Exclusive canyon viewpoints for unforgettable photos.</p></div>
-          <div class="trust-item anim ad4"><div class="ti-icon">⭐</div><h5>5-Star Rated</h5><p>Trusted by 2000+ guests from around the world.</p></div>
+          <div class="trust-item anim">
+            <div class="ti-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 21v-1a5 5 0 015-5h4a5 5 0 015 5v1"/><circle cx="18" cy="8" r="2.5"/><path d="M22 21v-1a3.5 3.5 0 00-3-3.46"/></svg>
+            </div>
+            <h5>Local Guides</h5>
+            <p>Expert locals who know every trail and viewpoint.</p>
+          </div>
+          <div class="trust-item anim ad1">
+            <div class="ti-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h5>Modern Fleet</h5>
+            <p>Regularly maintained vehicles for safety and performance.</p>
+          </div>
+          <div class="trust-item anim ad2">
+            <div class="ti-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 20l-5-5-5 5"/><path d="M12 15V4"/><path d="M7 8l5-5 5 5"/><path d="M4 20h16"/></svg>
+            </div>
+            <h5>Pristine Nature</h5>
+            <p>Untouched mountains, forests, and crystal rivers.</p>
+          </div>
+          <div class="trust-item anim ad3">
+            <div class="ti-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <h5>Stunning Views</h5>
+            <p>Exclusive canyon viewpoints for unforgettable photos.</p>
+          </div>
+          <div class="trust-item anim ad4">
+            <div class="ti-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h5>5-Star Rated</h5>
+            <p>Trusted by 2000+ guests from around the world.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -574,7 +706,7 @@
     <!-- ════════════════════════════════════════════
          BOOKING / CONTACT
     ════════════════════════════════════════════ -->
-    <section class="section" id="book">
+    <section class="section section-book" id="book">
       <div class="container">
         <div class="book-layout book-layout--solo">
           <div class="book-left">
@@ -583,15 +715,21 @@
             <p class="text-body anim ad2">Reach out by phone or WhatsApp — we'll confirm availability and details for buggy, quad, SUP, boat &amp; kayak.</p>
             <div class="contact-cards anim ad3">
               <a href="tel:+385000000000" class="cc-item">
-                <span class="cc-icon">📞</span>
+                <span class="cc-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </span>
                 <div><strong>Call Us</strong><span>+385 00 000 000</span></div>
               </a>
               <a href="https://wa.me/385000000000" class="cc-item green" target="_blank" rel="noopener">
-                <span class="cc-icon">💬</span>
+                <span class="cc-icon-wrap wa">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                </span>
                 <div><strong>WhatsApp</strong><span>Fastest reply</span></div>
               </a>
               <div class="cc-item">
-                <span class="cc-icon">📍</span>
+                <span class="cc-icon-wrap loc">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
                 <div><strong>Location</strong><span>Omiš, Croatia</span></div>
               </div>
             </div>
@@ -624,9 +762,9 @@
         </div>
         <div class="footer-col">
           <h6>Contact</h6>
-          <p>📍 Omiš, Croatia</p>
-          <p>📞 +385 00 000 000</p>
-          <p>💬 WhatsApp</p>
+          <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>Omiš, Croatia</p>
+          <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.876.37 1.74.7 2.56a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.82.33 1.68.57 2.56.7A2 2 0 0122 16.92z"/></svg>+385 00 000 000</p>
+          <a href="https://wa.me/385000000000" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</a>
         </div>
       </div>
       <div class="footer-bottom">
