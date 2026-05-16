@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <meta name="description" content="Omiš Activities — buggy, quad, SUP, boat & kayak in Omiš, Croatia. Cetina canyon, river, and Adriatic adventures with local experts."/>
   <meta name="theme-color" content="#050C18"/>
   <title>Omiš Activities — Sea, River &amp; Adventure in Croatia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -31,6 +31,7 @@
         <a href="#rentals">Quad</a>
         <a href="#sup">SUP</a>
         <a href="#boat">Boat</a>
+        <a href="#kayak">Kayak</a>
         <a href="#book">Book</a>
       </nav>
       <a href="#book" class="btn-header">Book Now</a>
@@ -48,6 +49,7 @@
       <a href="#rentals">Quad</a>
       <a href="#sup">SUP</a>
       <a href="#boat">Boat</a>
+      <a href="#kayak">Kayak</a>
       <a href="#book" class="btn-primary">Book Now</a>
     </nav>
   </div>
@@ -61,7 +63,8 @@
         <div class="hero-parallax-layer" id="heroBg">
           <div class="hero-zoom-layer">
             <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80" aria-hidden="true">
-              <source src="https://videos.pexels.com/video-files/3121327/3121327-hd_1920_1080_24fps.mp4" type="video/mp4"/>
+              <source src="/assets/hero-video.mp4" type="video/mp4"/>
+              <source src="/assets/hero-video.mov" type="video/quicktime"/>
             </video>
             <div class="hero-bg-img hero-bg-fallback" aria-hidden="true"></div>
           </div>
@@ -80,7 +83,7 @@
           <a href="#rentals">Quad</a><span class="hero-strip-dot" aria-hidden="true">·</span>
           <a href="#sup">SUP</a><span class="hero-strip-dot" aria-hidden="true">·</span>
           <a href="#boat">Boat</a><span class="hero-strip-dot" aria-hidden="true">·</span>
-          <a href="#book">Kayak</a>
+          <a href="#kayak">Kayak</a>
         </nav>
         <a href="#tours" class="hero-cta anim-fade ad3">Choose Experience <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
       </div>
@@ -97,9 +100,18 @@
     <section class="section section-omis" id="omis">
       <div class="container">
         <div class="omis-intro anim">
-          <span class="tag teal">Omiš Activities</span>
-          <h2 class="title-lg anim ad1">One Town. Five Adventures.</h2>
-          <p class="omis-lead anim ad2">Where the Cetina canyon meets the Adriatic — buggy and quad trails above, SUP, kayak, and boat on the water below. All run by locals who know every route.</p>
+          <span class="tag teal omis-tag">Omiš Activities</span>
+          <p class="omis-kicker">Start here — five ways to explore land &amp; water in one place.</p>
+          <h2 class="title-lg omis-title anim ad1">One Town.<span class="omis-title-line2"><span class="omis-title-accent">Five Adventures.</span></span></h2>
+          <p class="omis-lead anim ad2">Cetina canyon meets the Adriatic: guided buggy and quad rentals in the hills; SUP, kayak, and boat on the river &amp; sea — all with locals who know every route.</p>
+        </div>
+        <div class="omis-offer-label anim ad2">
+          <div class="omis-offer-label__row">
+            <span class="omis-offer-label__rule" aria-hidden="true"></span>
+            <span class="omis-offer-label__text">Choose an experience</span>
+            <span class="omis-offer-label__rule" aria-hidden="true"></span>
+          </div>
+          <p class="omis-offer-label__sub">Tap a card to jump ahead — every section below has more photos, prices &amp; how to book.</p>
         </div>
         <div class="omis-activities-grid anim ad2">
           <a href="#tours" class="omis-act-card">
@@ -127,8 +139,8 @@
             </div>
           </a>
           <a href="#sup" class="omis-act-card">
-            <div class="omis-act-img">
-              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=75" alt="Clear water and beach for SUP" loading="lazy"/>
+            <div class="omis-act-img omis-act-img--contain">
+              <img src="assets/sup-activity.png" alt="SUP board on a pebble shore by turquoise mountain lake water" loading="lazy" width="682" height="1024"/>
             </div>
             <div class="omis-act-body">
               <div class="omis-act-icon">
@@ -144,25 +156,29 @@
             </div>
             <div class="omis-act-body">
               <div class="omis-act-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 15c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M6 15h12"/><ellipse cx="12" cy="17.5" rx="6" ry="2"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 17.5c1.3-.6 2.7-.9 4.2-.9 1.6 0 3.1.4 4.5 1.1 1.4-.7 2.9-1.1 4.5-1.1s3.1.3 4.4.9c1.3-.6 2.8-.9 4.4-.9 1.5 0 2.9.3 4.2.9"/><path d="M5.5 16.2 7.5 10h9l2 6.2"/><path d="M6 16.5c2.2 1.2 4.7 1.8 7.3 1.8S18.3 17.7 20.5 16.5"/><path d="M10 10V7.5h4V10"/></svg>
               </div>
               <h4>Boat</h4>
               <span>Glass boat, taxi &amp; river rentals</span>
             </div>
           </a>
-          <a href="#book" class="omis-act-card omis-act-card--accent">
+          <a href="#kayak" class="omis-act-card omis-act-card--accent">
             <div class="omis-act-img">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=75" alt="Kayak on calm Adriatic waters" loading="lazy"/>
+              <img src="assets/omis-kayak-cetina.png" alt="Kayakers on the calm Cetina River between tall limestone canyon cliffs, first-person view from a yellow kayak bow" loading="lazy" width="1920" height="1080"/>
             </div>
             <div class="omis-act-body">
               <div class="omis-act-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M4 16l4-8h8l4 8"/><circle cx="12" cy="12" r="1"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16.5Q12 13.5 19 16.5"/><path d="M5.8 17.5Q12 20.5 18.2 17.5"/><path d="M12 6v11"/><path d="M8 7.5h8"/><path d="M8 15.5h8"/></svg>
               </div>
               <h4>Kayak</h4>
-              <span>River mouth &amp; coastline</span>
+              <span>Self-guided river rental on the Cetina</span>
             </div>
           </a>
         </div>
+        <p class="omis-scroll-hint anim ad3" aria-hidden="true">
+          <span>Your adventure continues below</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </p>
       </div>
     </section>
 
@@ -173,7 +189,7 @@
       <!-- Visual Banner -->
       <div class="tours-banner">
         <div class="tours-banner-media">
-          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=80" alt="Off-road buggy on mountain trail" loading="lazy"/>
+          <img src="/assets/tours-banner-buggies.png" alt="Line of red CFMOTO off-road buggies on a gravel trail under blue sky" loading="lazy" width="1024" height="682"/>
         </div>
         <div class="tours-banner-overlay"></div>
         <div class="tours-banner-content">
@@ -212,7 +228,7 @@
         <div class="tours-grid">
           <div class="tour-card anim">
             <div class="tc-header-img">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=75" alt="Mountain trail scenery" loading="lazy"/>
+              <img src="/assets/tour-mountain-explorer.png" alt="Red off-road buggy kicking up dust on a forest gravel trail" loading="lazy" width="1024" height="682"/>
               <div class="tc-duration-badge">2 hours</div>
             </div>
             <div class="tc-body">
@@ -225,7 +241,7 @@
                 <li><span class="check">✓</span> 2 persons / buggy</li>
               </ul>
               <div class="tc-footer">
-                <div class="tc-price"><span>€110</span><small>per vehicle</small></div>
+                <div class="tc-price"><span>€120</span><small>per vehicle</small></div>
                 <a href="#book" class="btn-book">Book Now</a>
               </div>
             </div>
@@ -234,7 +250,7 @@
           <div class="tour-card featured anim ad1">
             <div class="tc-popular">★ Most Popular</div>
             <div class="tc-header-img">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=75" alt="Golden hour mountain landscape" loading="lazy"/>
+              <img src="/assets/tour-golden-hour.png" alt="Red off-road buggy in golden light, dust on a mountain gravel trail" loading="lazy" width="1024" height="682"/>
               <div class="tc-duration-badge sunset">Sunset</div>
             </div>
             <div class="tc-body">
@@ -256,7 +272,7 @@
 
           <div class="tour-card anim ad2">
             <div class="tc-header-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=75" alt="Mountain peaks adventure" loading="lazy"/>
+              <img src="/assets/tour-ultimate-trail.png" alt="Line of red CFMOTO buggies on a hilltop overlooking the sea at golden hour" loading="lazy" width="1024" height="682"/>
               <div class="tc-duration-badge">3 hours</div>
             </div>
             <div class="tc-body">
@@ -270,7 +286,7 @@
                 <li><span class="check">✓</span> 2 persons / buggy</li>
               </ul>
               <div class="tc-footer">
-                <div class="tc-price"><span>€130</span><small>per vehicle</small></div>
+                <div class="tc-price"><span>€140</span><small>per vehicle</small></div>
                 <a href="#book" class="btn-book">Book Now</a>
               </div>
             </div>
@@ -286,7 +302,7 @@
       <!-- Visual Banner -->
       <div class="rentals-banner">
         <div class="rentals-banner-media">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=80" alt="Mountain landscape — freedom to explore" loading="lazy"/>
+          <img src="/assets/rentals-banner-buggies.png" alt="Group with red CFMOTO buggies on a mountain trail above the sea" loading="lazy" width="1024" height="768"/>
         </div>
         <div class="rentals-banner-overlay"></div>
         <div class="rentals-banner-content">
@@ -329,7 +345,8 @@
               <div class="rc-icon-wrap">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-4l2-5h10l2 5h2v4h-2"/><path d="M5 12h14"/></svg>
               </div>
-              <div>
+              <div class="rc-header-text">
+                <span class="rc-kind">Buggy</span>
                 <h5>Buggy Rentals</h5>
                 <p>4-wheel off-road vehicle · seats 2</p>
               </div>
@@ -363,7 +380,8 @@
               <div class="rc-icon-wrap">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="5" cy="17" r="2"/><circle cx="19" cy="17" r="2"/><path d="M7 17h10"/><path d="M5 15V9l4-3h2l3 3h3l2 3v3"/><path d="M9 6v6"/></svg>
               </div>
-              <div>
+              <div class="rc-header-text">
+                <span class="rc-kind">Quad</span>
                 <h5>Quad Rentals</h5>
                 <p>Single-rider ATV · maximum agility</p>
               </div>
@@ -469,7 +487,7 @@
           <div class="boat-cards-grid">
             <article class="boat-premium-card anim">
               <div class="boat-pc-media">
-                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85" alt="Crystal clear river water in a canyon" loading="lazy" width="900" height="560"/>
+                <img src="assets/glass-boat.png" alt="Glass boat with passengers on clear turquoise water" loading="lazy" width="1024" height="768"/>
                 <div class="boat-pc-media-shine"></div>
                 <span class="boat-pc-corner-badge">From €20</span>
               </div>
@@ -483,11 +501,12 @@
                 <p class="boat-pc-lead">Scenic ride through the Cetina canyon with a glass-bottom view — fish and the riverbed below, guide on board.</p>
                 <ul class="boat-pc-facts">
                   <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Ideal for families &amp; children · pets allowed</li>
-                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30–35 min cruise · 1h break at Radmanove Mlinice</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30 min to Radmanove Mlinice · 1h break · 30 min return</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 1h cruising · 2h total tour</li>
                   <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Nature-focused, relaxed pace</li>
                 </ul>
                 <div class="boat-pc-meta">
-                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> ≈30–35 min + 1h stop</span>
+                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 2h total · 1h on the water</span>
                 </div>
                 <div class="boat-pc-badges">
                   <span>Family friendly</span>
@@ -504,8 +523,8 @@
             </article>
 
             <article class="boat-premium-card anim ad1">
-              <div class="boat-pc-media">
-                <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=900&q=85" alt="Speedboat on open water" loading="lazy" width="900" height="560"/>
+              <div class="boat-pc-media boat-pc-media--portrait">
+                <img src="assets/rent-boat.png" alt="Small motorboat with sunshade docked in a harbor" loading="lazy" width="576" height="1024"/>
                 <div class="boat-pc-media-shine"></div>
                 <span class="boat-pc-corner-badge">From €70</span>
               </div>
@@ -540,7 +559,7 @@
 
             <article class="boat-premium-card anim ad2">
               <div class="boat-pc-media">
-                <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Luxury boat on calm water" loading="lazy" width="900" height="560"/>
+                <img src="assets/taxi-boat.png" alt="Tour boat with passengers on the Cetina river" loading="lazy" width="1024" height="768"/>
                 <div class="boat-pc-media-shine"></div>
                 <span class="boat-pc-corner-badge">From €15</span>
               </div>
@@ -553,12 +572,12 @@
                 </div>
                 <p class="boat-pc-lead">Private transfer-style boat through the Cetina canyon — guided, with time to enjoy Radmanove Mlinice.</p>
                 <ul class="boat-pc-facts">
-                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30 min ride · 90 min break · guide included</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 30 min to Radmanove Mlinice · 90 min break · 30 min return</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 1h cruising · 2h 30min total tour · guide included</li>
                   <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Panoramic canyon route · pet friendly</li>
-                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Suitable for all ages</li>
                 </ul>
                 <div class="boat-pc-meta">
-                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 30 min + 90 min stop</span>
+                  <span class="boat-pc-duration"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 2h 30min total · 1h on the water</span>
                 </div>
                 <div class="boat-pc-badges">
                   <span>Private transfer</span>
@@ -580,6 +599,68 @@
               <h3 class="boat-bottom-title">Ready for your river adventure?</h3>
               <p class="boat-bottom-sub">We'll match you with the right boat, time slot, and meeting point.</p>
               <a href="#book" class="btn-boat-bottom">Book your boat experience</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         KAYAK — SELF-GUIDED RENTAL
+    ════════════════════════════════════════════ -->
+    <section class="section-kayak-rent" id="kayak" aria-labelledby="kayak-heading">
+      <div class="kayrk-hero">
+        <div class="kayrk-hero-bg" aria-hidden="true"></div>
+        <div class="kayrk-hero-scrim"></div>
+        <div class="container kayrk-hero-inner">
+          <span class="kayrk-eyebrow anim">Cetina kayak rent</span>
+          <h2 class="kayrk-title anim ad1" id="kayak-heading">Self-Guided River Rental Adventure</h2>
+          <p class="kayrk-lead anim ad2">Take the wheel and explore at your own pace. The most flexible way to discover the beauty of the Cetina River with a partner.</p>
+        </div>
+      </div>
+      <div class="kayrk-panel">
+        <div class="container">
+          <div class="kayrk-split">
+            <div class="kayrk-media anim">
+              <img
+                src="assets/kayak-rent-cetina-pov.png"
+                alt="First-person view from a yellow kayak on the calm Cetina River, with colorful kayaks ahead and high limestone cliffs under a clear blue sky"
+                loading="lazy"
+                width="1920"
+                height="1080"
+              />
+            </div>
+            <div class="kayrk-copy">
+              <h3 class="kayrk-overview-title anim">Tour overview</h3>
+              <p class="kayrk-overview-text anim ad1">
+                Discover the serenity of the Cetina River with our flexible 4-hour self-guided kayak rental.
+                <strong>Important: each rental kayak holds a maximum of 2 people</strong>—one boat, two seats.
+                Perfect for couples or friends, you will pilot a stable two-person boat through calm waters.
+                Take control of your journey by paddling at your own speed, pausing for a refreshing swim,
+                and returning to our base where your adventure began.
+              </p>
+              <div class="kayrk-facts anim ad2" role="list">
+                <div class="kayrk-fact" role="listitem">
+                  <span class="kayrk-fact-label">Duration</span>
+                  <span class="kayrk-fact-value">4 hours</span>
+                </div>
+                <div class="kayrk-fact" role="listitem">
+                  <span class="kayrk-fact-label">Difficulty</span>
+                  <span class="kayrk-fact-value">Very easy</span>
+                </div>
+                <div class="kayrk-fact" role="listitem">
+                  <span class="kayrk-fact-label">Price</span>
+                  <span class="kayrk-fact-value kayrk-fact-price">€25 <span class="kayrk-per">/ kayak</span></span>
+                </div>
+                <div class="kayrk-fact" role="listitem">
+                  <span class="kayrk-fact-label">Kayak</span>
+                  <span class="kayrk-fact-value">Max 2 people</span>
+                </div>
+              </div>
+              <div class="kayrk-ctas anim ad2">
+                <a href="#book" class="btn-kayak-primary">Book this tour</a>
+                <a href="#book" class="btn-kayak-outline">Ask a question</a>
+              </div>
             </div>
           </div>
         </div>
@@ -648,37 +729,37 @@
         <div class="gallery-bento anim ad2" role="list">
           <figure class="gallery-cell gallery-cell--feature" role="listitem">
             <div class="gallery-cell-media">
-              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Turquoise Adriatic water from above, ideal for SUP and boat" loading="lazy" decoding="async" sizes="(max-width: 1023px) 100vw, 50vw"/>
+              <img src="assets/sup-activity.png" alt="SUP board on a pebble shore by turquoise mountain lake water" loading="lazy" decoding="async" width="682" height="1024" sizes="(max-width: 1023px) 100vw, 50vw"/>
             </div>
             <figcaption class="gallery-caption">Sea &amp; SUP</figcaption>
           </figure>
           <figure class="gallery-cell" role="listitem">
             <div class="gallery-cell-media">
-              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Off-road vehicle on a dusty mountain trail" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+              <img src="/assets/tour-mountain-explorer.png" alt="Red off-road buggy kicking up dust on a forest gravel trail" loading="lazy" decoding="async" width="1024" height="682" sizes="(max-width: 1023px) 50vw, 25vw"/>
             </div>
             <figcaption class="gallery-caption">Buggy trails</figcaption>
           </figure>
           <figure class="gallery-cell" role="listitem">
             <div class="gallery-cell-media">
-              <img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Steep rocky coastline and Mediterranean light" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+              <img src="assets/omis-kayak-cetina.png" alt="Kayakers on the calm Cetina River between tall limestone canyon cliffs" loading="lazy" decoding="async" width="1920" height="1080" sizes="(max-width: 1023px) 50vw, 25vw"/>
             </div>
             <figcaption class="gallery-caption">Cliffs &amp; stone</figcaption>
           </figure>
           <figure class="gallery-cell" role="listitem">
             <div class="gallery-cell-media">
-              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Calm sandy beach and clear shallow sea" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+              <img src="assets/glass-boat.png" alt="Glass boat with passengers on clear turquoise water" loading="lazy" decoding="async" width="1024" height="768" sizes="(max-width: 1023px) 50vw, 25vw"/>
             </div>
-            <figcaption class="gallery-caption">Hidden beaches</figcaption>
+            <figcaption class="gallery-caption">Glass boat</figcaption>
           </figure>
           <figure class="gallery-cell" role="listitem">
             <div class="gallery-cell-media">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Layers of mountains and green valley haze" loading="lazy" decoding="async" sizes="(max-width: 1023px) 50vw, 25vw"/>
+              <img src="assets/kayak-rent-cetina-pov.png" alt="First-person view from a yellow kayak on the Cetina River with limestone cliffs ahead" loading="lazy" decoding="async" width="1920" height="1080" sizes="(max-width: 1023px) 50vw, 25vw"/>
             </div>
             <figcaption class="gallery-caption">Canyon views</figcaption>
           </figure>
           <figure class="gallery-cell gallery-cell--wide" role="listitem">
             <div class="gallery-cell-media">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Wide alpine landscape at golden hour" loading="lazy" decoding="async" sizes="(max-width: 1023px) 100vw, 50vw"/>
+              <img src="/assets/tour-golden-hour.png" alt="Red off-road buggy in golden light, dust on a mountain gravel trail" loading="lazy" decoding="async" width="1024" height="682" sizes="(max-width: 1023px) 100vw, 50vw"/>
             </div>
             <figcaption class="gallery-caption">Golden hour drives</figcaption>
           </figure>
@@ -695,7 +776,7 @@
         <p class="text-sub light anim ad1">Book your tour today. We confirm quickly via WhatsApp.</p>
         <div class="cta-btns anim ad2">
           <a href="#book" class="btn-primary large">Book Now</a>
-          <a href="https://wa.me/385000000000" class="btn-wa large" target="_blank" rel="noopener">
+          <a href="https://wa.me/385955514102" class="btn-wa large" target="_blank" rel="noopener">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             WhatsApp
           </a>
@@ -708,32 +789,49 @@
     ════════════════════════════════════════════ -->
     <section class="section section-book" id="book">
       <div class="container">
-        <div class="book-layout book-layout--solo">
+        <div class="book-layout">
           <div class="book-left">
             <span class="tag anim">Get in Touch</span>
             <h2 class="title-lg anim ad1">Book Your<br/>Adventure</h2>
             <p class="text-body anim ad2">Reach out by phone or WhatsApp — we'll confirm availability and details for buggy, quad, SUP, boat &amp; kayak.</p>
             <div class="contact-cards anim ad3">
-              <a href="tel:+385000000000" class="cc-item">
+              <a href="tel:+385955514102" class="cc-item">
                 <span class="cc-icon-wrap">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                 </span>
-                <div><strong>Call Us</strong><span>+385 00 000 000</span></div>
+                <div><strong>Call Us</strong><span>+385 95 551 4102</span></div>
               </a>
-              <a href="https://wa.me/385000000000" class="cc-item green" target="_blank" rel="noopener">
+              <a href="https://wa.me/385955514102" class="cc-item green" target="_blank" rel="noopener">
                 <span class="cc-icon-wrap wa">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
                 </span>
                 <div><strong>WhatsApp</strong><span>Fastest reply</span></div>
               </a>
-              <div class="cc-item">
-                <span class="cc-icon-wrap loc">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-                </span>
-                <div><strong>Location</strong><span>Omiš, Croatia</span></div>
-              </div>
             </div>
           </div>
+          <aside class="book-right anim ad2" aria-labelledby="book-stand-heading">
+            <div class="book-stand-card">
+              <div class="book-stand-top">
+                <span class="book-stand-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                </span>
+                <div>
+                  <h3 class="book-stand-title" id="book-stand-heading">Our stand in Omiš</h3>
+                  <p class="book-stand-text">Drop by in person to book or ask about buggy &amp; quad tours, rentals, SUP, boat trips, and river kayaks — we're right in town at <strong>Buggy Omiš</strong>.</p>
+                </div>
+              </div>
+              <div class="book-map-wrap">
+                <iframe
+                  title="Buggy Omiš — stand location on Google Maps"
+                  src="https://www.google.com/maps?q=43.4446605,16.6888863&amp;z=17&amp;output=embed"
+                  loading="lazy"
+                  allowfullscreen=""
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <a class="book-map-link" href="https://maps.app.goo.gl/9fmF52aYk9YoWKJL7" target="_blank" rel="noopener noreferrer">Open in Google Maps<span class="book-map-link-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -753,6 +851,7 @@
           <a href="#rentals">Quad &amp; buggy rental</a>
           <a href="#sup">SUP</a>
           <a href="#boat">Boat</a>
+          <a href="#kayak">Kayak</a>
         </div>
         <div class="footer-col">
           <h6>Explore</h6>
@@ -763,8 +862,8 @@
         <div class="footer-col">
           <h6>Contact</h6>
           <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0120 10.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>Omiš, Croatia</p>
-          <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.876.37 1.74.7 2.56a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.82.33 1.68.57 2.56.7A2 2 0 0122 16.92z"/></svg>+385 00 000 000</p>
-          <a href="https://wa.me/385000000000" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</a>
+          <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.876.37 1.74.7 2.56a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.82.33 1.68.57 2.56.7A2 2 0 0122 16.92z"/></svg><a href="tel:+385955514102">+385 95 551 4102</a></p>
+          <a href="https://wa.me/385955514102" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px;opacity:.5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -774,7 +873,7 @@
   </footer>
 
   <!-- Floating WhatsApp -->
-  <a href="https://wa.me/385000000000" class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <a href="https://wa.me/385955514102" class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="WhatsApp chat +385 95 551 4102">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
