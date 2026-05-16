@@ -2684,7 +2684,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   .tour-card.featured { transform: none; }
   .tour-card.featured:hover { transform: translateY(-8px); }
   .tc-body { padding: var(--space-sm) var(--space-md) var(--space-md); }
-  .tc-footer { flex-direction: column; gap: var(--space-sm); }
+  .tc-footer { flex-direction: column; gap: var(--space-xs); padding-top: var(--space-sm); }
   .tc-price { text-align: center; }
   .btn-book { width: 100%; min-height: 46px; }
 
@@ -2694,6 +2694,47 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   }
   .sup-price-card.featured:hover {
     transform: translateY(-6px);
+  }
+
+  /* SUP layout — tighter cards while keeping desktop rhythm */
+  .sup-layout {
+    gap: var(--space-lg);
+  }
+  .sup-desc {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: var(--space-md);
+  }
+  .sup-feat {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.78rem;
+    gap: 6px;
+  }
+  .sup-feat span {
+    font-size: 1rem;
+  }
+  .sup-price-card {
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+  }
+  .sup-price-card p {
+    font-size: 0.76rem;
+    line-height: 1.45;
+    margin-bottom: var(--space-sm);
+  }
+  .spc-header {
+    margin-bottom: var(--space-xs);
+  }
+  .spc-time {
+    font-size: 1.18rem;
+  }
+  .spc-price {
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+  }
+  .btn-water {
+    padding: 11px 18px;
+    font-size: 0.8rem;
   }
 
   /* Kayak rental CTAs — full width for thumbs */
@@ -2714,8 +2755,151 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   .kayrk-fact-value { font-size: 0.88rem; }
   .kayrk-fact-price { font-size: 0.98rem; }
 
-  /* Boat cards: keep media height sane in portrait source */
-  .boat-pc-media--portrait { height: min(220px, 52vw); }
+  .kayrk-panel {
+    padding: clamp(22px, 5vw, 40px) 0 clamp(28px, 5.5vw, 52px);
+  }
+  .kayrk-split {
+    gap: var(--space-md);
+  }
+  .kayrk-title {
+    font-size: clamp(1.52rem, 6.5vw, 2.1rem);
+    margin-bottom: var(--space-sm);
+  }
+  .kayrk-overview-title {
+    font-size: clamp(1.22rem, 4.5vw, 1.55rem);
+    margin-bottom: var(--space-sm);
+  }
+  .kayrk-overview-text {
+    font-size: 0.86rem;
+    line-height: 1.62;
+    margin-bottom: var(--space-sm);
+  }
+
+  /* Tour cards — more content visible per viewport */
+  .tours-grid {
+    gap: var(--space-md);
+  }
+  .tour-card h4 {
+    font-size: 1.12rem;
+  }
+  .tc-desc {
+    font-size: 0.79rem;
+    line-height: 1.55;
+    margin-bottom: var(--space-sm);
+  }
+  .tc-features {
+    margin-bottom: var(--space-sm);
+  }
+  .tc-features li {
+    padding: 4px 0;
+    font-size: 0.76rem;
+    gap: 8px;
+  }
+  .tc-duration-badge {
+    padding: 5px 13px;
+    font-size: 0.66rem;
+  }
+  .tc-price span {
+    font-size: 1.42rem;
+  }
+
+  .rentals-grid {
+    gap: var(--space-lg);
+  }
+
+  /* Boat premium cards — denser typography & spacing */
+  .boat-cards-grid {
+    gap: 10px;
+  }
+  .boat-exp-header.section-header {
+    margin-bottom: var(--space-xs);
+  }
+  .boat-exp-header .title-lg {
+    font-size: clamp(1.45rem, 5.5vw, 2rem);
+  }
+  .boat-exp-header .boat-exp-sub {
+    font-size: 0.84rem;
+    line-height: 1.52;
+    max-width: 36rem;
+  }
+  .boat-wave-divider {
+    margin: var(--space-xs) 0 var(--space-sm);
+  }
+  .boat-pc-media {
+    max-height: 152px;
+    aspect-ratio: 16 / 9;
+  }
+  .boat-pc-media--portrait {
+    height: min(168px, 44vw);
+  }
+  .boat-pc-corner-badge {
+    top: 8px;
+    right: 8px;
+    padding: 4px 10px;
+    font-size: 0.61rem;
+  }
+  .boat-pc-panel {
+    padding: 12px 14px 13px;
+  }
+  .boat-pc-head {
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .boat-pc-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+  }
+  .boat-pc-title {
+    font-size: 1.06rem;
+    letter-spacing: 0.01em;
+    line-height: 1.18;
+  }
+  .boat-pc-lead {
+    font-size: 0.78rem;
+    line-height: 1.52;
+    margin-bottom: 10px;
+  }
+  .boat-pc-facts {
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .boat-pc-facts li {
+    font-size: 0.72rem;
+    line-height: 1.4;
+    gap: 8px;
+  }
+  .boat-pc-meta {
+    margin-bottom: 6px;
+  }
+  .boat-pc-duration {
+    font-size: 0.68rem;
+    gap: 5px;
+  }
+  .boat-pc-badges {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .boat-pc-badges span {
+    font-size: 0.56rem;
+    padding: 3px 8px;
+    letter-spacing: 0.03em;
+  }
+  .boat-pc-pricing {
+    padding: 8px 11px;
+    margin-bottom: 10px;
+  }
+  .boat-pr-row {
+    padding: 5px 0;
+    font-size: 0.74rem;
+  }
+  .boat-pr-row strong {
+    font-size: 0.87rem;
+  }
+  .btn-boat-reserve {
+    padding: 9px 14px;
+    font-size: 0.69rem;
+  }
 
   /* CTA band */
   .section-cta { padding: var(--space-2xl) 0; }
