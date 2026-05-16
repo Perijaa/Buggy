@@ -2534,6 +2534,14 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
 .anim.ad3 { transition-delay: 0.36s; }
 .anim.ad4 { transition-delay: 0.48s; }
 
+@media (prefers-reduced-motion: reduce) {
+  .anim {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Hero-specific animations (triggered by JS after loader) */
 .anim-fade { opacity: 0; transform: translateY(20px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
 .hero .anim-fade {

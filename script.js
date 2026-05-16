@@ -101,20 +101,31 @@ function initMobileMenu() {
 
 function initScrollAnimations() {
   const elements = document.querySelectorAll('.anim');
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -50px 0px'
-  });
 
-  elements.forEach(el => observer.observe(el));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) reveal(entry.target);
+      });
+    },
+    {
+      threshold: 0.06,
+      rootMargin: '0px 0px 120px 0px',
+    }
+  );
+
+  function reveal(el) {
+    if (el.classList.contains('visible')) return;
+    el.classList.add('visible');
+    observer.unobserve(el);
+  }
+
+  elements.forEach((el) => {
+    observer.observe(el);
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    if (rect.top < vh && rect.bottom > 0) reveal(el);
+  });
 }
 
 function initSmoothScroll() {
