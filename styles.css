@@ -2518,6 +2518,56 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
 }
 .footer-bottom p { font-size: 0.72rem; opacity: 0.35; letter-spacing: 0.02em; }
 
+.footer-consumer-notice {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg) var(--space-md);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+}
+.footer-consumer-title {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: rgba(255,255,255,0.92);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-consumer-intro {
+  margin: 0 0 var(--space-md);
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.58);
+}
+.footer-consumer-list {
+  margin: 0 0 var(--space-md);
+  padding-left: 1.2rem;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.6);
+}
+.footer-consumer-list li { margin-bottom: 0.5rem; }
+.footer-consumer-list strong { color: rgba(255,255,255,0.82); font-weight: 600; }
+.footer-consumer-list a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-consumer-list a:hover { color: #fff; }
+.footer-consumer-legal {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.76rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.55);
+}
+.footer-consumer-meta {
+  margin: 0;
+  font-size: 0.68rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.38);
+}
+
 /* ═══ FLOATING WA ═══ */
 .wa-fab {
   position: fixed; bottom: 90px; right: var(--space-md); z-index: 80;

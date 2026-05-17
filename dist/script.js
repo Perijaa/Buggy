@@ -53,10 +53,11 @@ function initBoatParallax() {
 
 function initLoader() {
   const loader = document.getElementById('loader');
-  
+  if (!loader) return;
+
   setTimeout(() => {
     loader.classList.add('hidden');
-    
+
     setTimeout(() => {
       document.querySelectorAll('.hero .anim-fade').forEach(el => {
         el.classList.add('visible');
@@ -67,6 +68,7 @@ function initLoader() {
 
 function initHeader() {
   const header = document.getElementById('header');
+  if (!header) return;
   let ticking = false;
 
   window.addEventListener('scroll', () => {
@@ -83,6 +85,7 @@ function initHeader() {
 function initMobileMenu() {
   const burger = document.getElementById('burger');
   const menu = document.getElementById('mobileMenu');
+  if (!burger || !menu) return;
 
   burger.addEventListener('click', () => {
     burger.classList.toggle('open');
@@ -136,7 +139,7 @@ function initSmoothScroll() {
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      
+
       const headerOffset = 80;
       const elementPosition = target.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
@@ -149,7 +152,8 @@ function initSmoothScroll() {
 
 function initWhatsApp() {
   const fab = document.getElementById('waFab');
-  
+  if (!fab) return;
+
   window.addEventListener('scroll', () => {
     fab.classList.toggle('show', window.scrollY > 500);
   }, { passive: true });

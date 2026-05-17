@@ -2,7 +2,7 @@
   "name": "buggy",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "public/script.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
