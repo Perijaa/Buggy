@@ -2582,16 +2582,6 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
 .wa-fab:hover { transform: scale(1.1); }
 .wa-fab svg { width: 26px; height: 26px; }
 
-/* ═══ MOBILE STICKY ═══ */
-.mobile-sticky {
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 80;
-  padding: var(--space-sm);
-  background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
-}
-@media (min-width: 768px) { .mobile-sticky { display: none; } }
-
 /* ═══ ANIMATIONS ═══ */
 .anim {
   opacity: 0; transform: translateY(30px);
@@ -2626,7 +2616,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
 
 /* ═══ RESPONSIVE — phones & small tablets (desktop unchanged at 768px+) ═══ */
 @media (max-width: 767px) {
-  body { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+  body { padding-bottom: env(safe-area-inset-bottom, 0px); }
 
   .container {
     padding-left: max(var(--space-md), env(safe-area-inset-left, 0px));
@@ -2650,15 +2640,9 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
     padding-right: env(safe-area-inset-right, 0px);
   }
 
-  .mobile-sticky {
-    padding-bottom: calc(var(--space-sm) + env(safe-area-inset-bottom, 0px));
-    padding-left: max(var(--space-sm), env(safe-area-inset-left, 0px));
-    padding-right: max(var(--space-sm), env(safe-area-inset-right, 0px));
-  }
-
   .wa-fab {
     right: max(var(--space-md), env(safe-area-inset-right, 0px));
-    bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+    bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
   }
 
   .burger {
