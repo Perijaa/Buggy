@@ -6,7 +6,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const landings = [
   'rafting-omis.html',
-  'zipline-omis.html',
   'buggy-tours-omis.html',
   'quad-atv-rental-omis.html',
   'sup-paddleboarding-omis.html',
