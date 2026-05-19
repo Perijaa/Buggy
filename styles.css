@@ -311,6 +311,11 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   width: 100%; height: 100%;
   object-fit: cover;
   z-index: 2;
+  pointer-events: none;
+}
+/* iOS Safari: reduce native stalled-state play affordance once autoplay succeeds */
+.hero-video::-webkit-media-controls-start-playback-button {
+  display: none;
 }
 
 .hero-bg-fallback {

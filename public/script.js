@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initLoader();
+  initHeroBackgroundVideo();
   initHeader();
   initHeroParallax();
   initBoatParallax();
@@ -8,6 +9,52 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initWhatsApp();
 });
+
+function initHeroBackgroundVideo() {
+  const video = document.getElementById('heroVideo');
+  if (!video) return;
+
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+  video.setAttribute('muted', '');
+
+  const tryPlay = () => {
+    const p = video.play();
+    if (p !== undefined && typeof p.catch === 'function') {
+      p.catch(() => {});
+    }
+  };
+
+  tryPlay();
+
+  ['loadeddata', 'canplay'].forEach((ev) =>
+    video.addEventListener(ev, tryPlay, { passive: true })
+  );
+
+  video.addEventListener(
+    'ended',
+    () => {
+      video.currentTime = 0;
+      tryPlay();
+    },
+    false
+  );
+
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) tryPlay();
+  });
+
+  let unlocked = false;
+  const unlock = () => {
+    if (unlocked) return;
+    unlocked = true;
+    tryPlay();
+  };
+  ['touchstart', 'pointerdown', 'click'].forEach((ev) => {
+    document.addEventListener(ev, unlock, { capture: true, passive: true, once: true });
+  });
+}
 
 function initHeroParallax() {
   const layer = document.getElementById('heroBg');
