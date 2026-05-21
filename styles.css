@@ -2020,7 +2020,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
 
 .kayrk-facts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   margin-bottom: var(--space-md);
   background: rgba(15, 35, 65, 0.14);
@@ -2028,9 +2028,9 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   border-radius: var(--radius);
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media (max-width: 380px) {
   .kayrk-facts {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 .kayrk-fact {
