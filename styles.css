@@ -999,6 +999,74 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
 }
 @media (min-width: 768px) {
   .tours-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+  .tours-grid--single {
+    grid-template-columns: 1fr;
+    max-width: min(920px, 100%);
+    margin-inline: auto;
+  }
+  .tours-grid--single .tour-card {
+    display: grid;
+    grid-template-columns: 1.12fr 1fr;
+    align-items: stretch;
+  }
+  .tours-grid--single .tour-card.featured {
+    transform: none;
+  }
+  .tours-grid--single .tour-card.featured:hover {
+    transform: translateY(-8px);
+  }
+  .tours-grid--single .tc-header-img {
+    aspect-ratio: unset;
+    min-height: 100%;
+  }
+  .tours-grid--single .tc-header-img img {
+    min-height: 360px;
+    height: 100%;
+  }
+  .tours-grid--single .tc-body {
+    padding: clamp(var(--space-lg), 3.5vw, var(--space-xl));
+    justify-content: center;
+  }
+  .tours-grid--single .tour-card h3 {
+    font-size: clamp(1.55rem, 2.8vw, 1.9rem);
+  }
+  .tours-grid--single .tc-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 34ch;
+    margin-inline: auto;
+  }
+  .tours-grid--single .tc-features {
+    max-width: 300px;
+    margin-inline: auto;
+    margin-bottom: var(--space-lg);
+  }
+  .tours-grid--single .tc-features li {
+    font-size: 0.88rem;
+    padding: 8px 0;
+  }
+  .tours-grid--single .tc-footer {
+    max-width: 340px;
+    margin-inline: auto;
+    width: 100%;
+    padding-top: var(--space-lg);
+  }
+  .tours-grid--single .tc-price span {
+    font-size: 2.35rem;
+  }
+  .tours-grid--single .btn-book {
+    padding: 14px 32px;
+    font-size: 0.9rem;
+  }
+  .tours-grid--single .tc-duration-badge {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+}
+
+.tours-grid--single {
+  max-width: min(920px, 100%);
+  margin-inline: auto;
 }
 
 .tour-card {
@@ -3272,6 +3340,18 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   .tours-grid {
     gap: var(--space-md);
   }
+  .tours-grid--single .tour-card h3 {
+    font-size: 1.35rem;
+  }
+  .tours-grid--single .tc-desc {
+    font-size: 0.88rem;
+  }
+  .tours-grid--single .tc-features li {
+    font-size: 0.82rem;
+  }
+  .tours-grid--single .tc-price span {
+    font-size: 1.75rem;
+  }
   .tour-card h3 {
     font-size: 1.12rem;
   }
@@ -3335,9 +3415,10 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
     padding: 0 var(--space-md) var(--space-md);
   }
   .rental-hl {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
     gap: 10px;
     padding: 12px;
     text-align: center;
@@ -3345,6 +3426,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   .rental-hl-icon {
     width: 44px;
     height: 44px;
+    margin-inline: auto;
   }
   .rental-hl-icon svg {
     width: 22px;
@@ -3352,6 +3434,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
   }
   .rental-hl-text {
     text-align: center;
+    width: 100%;
     min-width: 0;
   }
   .rental-hl-text strong {
@@ -3556,7 +3639,9 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
     grid-template-columns: 1fr;
   }
   .rental-hl {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     padding: 14px 16px;
   }
   .rental-hl-text strong {
