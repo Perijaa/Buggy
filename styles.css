@@ -3335,10 +3335,12 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
     padding: 0 var(--space-md) var(--space-md);
   }
   .rental-hl {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 12px;
-    text-align: left;
+    text-align: center;
   }
   .rental-hl-icon {
     width: 44px;
@@ -3349,7 +3351,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
     height: 22px;
   }
   .rental-hl-text {
-    text-align: left;
+    text-align: center;
     min-width: 0;
   }
   .rental-hl-text strong {
@@ -3554,8 +3556,7 @@ button, input, select, textarea { font: inherit; border: none; outline: none; ba
     grid-template-columns: 1fr;
   }
   .rental-hl {
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 14px 16px;
   }
   .rental-hl-text strong {
